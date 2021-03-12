@@ -5,6 +5,4 @@ discord.py
 os
 dotenv
 
-Installing Packages via pip:
-pip install -U discord.py
-pip install -U python-dotenv
+Packages will be installed using a appropriate requirements.txt file. 
