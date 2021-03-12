@@ -21,7 +21,7 @@ async def on_ready():
     print("Entwickelt von: SvH - Bot-Version: 0.1")
     print("Bot angemeldet und aktiv, warte auf Befehle.")
 
-#some facts about north-hanar
+#some facts about different nations
 @bot.command()
 async def nordhanar(ctx):
     embed = discord.Embed(title="Fakten über Nordhanar")
@@ -40,6 +40,14 @@ async def ratelon(ctx):
     embed.add_field(name="Einwohner", value = "ca. 154. Mio")
     await ctx.send(embed=embed)
 
+@bot.command()
+async def ratelon(ctx):
+    embed = discord.Embed(title="Fakten über das Kaiserreich Dreibürgen")
+    embed.add_field(name="Name des Staates", value = "Kaiserreich Dreibürgen")
+    embed.add_field(name="Staatsform", value = "konstitutionelle Monarchie")
+    embed.add_field(name="Staatsoberhaupt", value = "Friedrich Wilhelm I.")
+    embed.add_field(name="Einwohner", value = "ca. 319. Mio")
+    await ctx.send(embed=embed)
 
 
 bot.run(TOKEN)
