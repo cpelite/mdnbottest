@@ -21,16 +21,16 @@ async def on_ready():
     print("Entwickelt von: SvH - Bot-Version: 0.0.1")
     print("Bot angemeldet und aktiv, warte auf Befehle.")
 
-#simple test command, new structure -
-@bot.command()
-async def ping(ctx):
-    await ctx.send("test")
-
-#some facts about mns.
+#some facts about north-hanar
 @bot.command()
 async def nordhanar(ctx):
-    await ctx.send("Staatsform: parlamentarische Monarchie")
-    await ctx.send("Hauptstadt: Syffia")
-    await ctx.send("Staatsoberhaupt: Benedikt I.")
+    embed = discord.Embed(title="Fakten über Nordhanar")
+    embed.add_field(name="Name des Staates", value = "Vereinigtes Kaiserthum von Nordhanar")
+    embed.add_field(name="Staatsform", value = "parlamentarische Monarchie")
+    embed.add_field(name="Staatsoberhaupt", value = "Benedikt I.")
+    embed.add_field(name="Einwohner", value = "ca. 49. Mio")
+    await ctx.send(embed=embed)
+
+
 
 bot.run(TOKEN)
