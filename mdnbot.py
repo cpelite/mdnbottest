@@ -35,7 +35,7 @@ async def nordhanar(ctx):
 async def ratelon(ctx):
     embed = discord.Embed(title="Fakten über die Demokratische Union Ratelon")
     embed.add_field(name="Name des Staates", value = "Demokratische Union Ratelon")
-    embed.add_field(name="Staatsform", value = "Republik)
+    embed.add_field(name="Staatsform", value = "Republik")
     embed.add_field(name="Staatsoberhaupt", value = "Heinz Lüneburg")
     embed.add_field(name="Einwohner", value = "ca. 154. Mio")
     await ctx.send(embed=embed)
