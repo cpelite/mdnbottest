@@ -160,11 +160,9 @@ async def dreibürgen(ctx):
     await ctx.send(embed=embed)
 
 #falls command nicht existiert.
-@bot.event
+@client.event
 async def on_command_error(error, ctx):
     if isinstance(error, commands.CommandNotFound):
         await bot.send_message(ctx.message.channel, "Tut mir leid, aber dieser Befehl existiert nicht.")
-    else:
-        raise error
 
 bot.run(TOKEN)
