@@ -41,7 +41,7 @@ async def ratelon(ctx):
     await ctx.send(embed=embed)
 
 @bot.command()
-async def ratelon(ctx):
+async def dreibürgen(ctx):
     embed = discord.Embed(title="Fakten über das Kaiserreich Dreibürgen")
     embed.add_field(name="Name des Staates", value = "Kaiserreich Dreibürgen")
     embed.add_field(name="Staatsform", value = "konstitutionelle Monarchie")
