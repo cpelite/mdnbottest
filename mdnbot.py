@@ -1,4 +1,6 @@
 # imports
+from typing import List
+
 import discord
 import os
 from dotenv import load_dotenv
@@ -8,39 +10,27 @@ from discord.ext import commands
 load_dotenv()
 TOKEN = os.getenv("DISCORD_TOKEN")
 
-# some playing
-bot = commands.Bot
-
 # intents festlegen
 intents = discord.Intents.default()
 intents.members = True
-client = discord.Client(intents=intents)
+bot = commands.Bot(command_prefix='$', intents=intents)
 
-#welcome message
-@client.event
+#welcome message new
+@bot.event
 async def on_ready():
-    print('Bot wurde als {0.user} eingeloggt und wartet auf Befehle.'.format(client))
+    print("Entwickelt von: SvH - Bot-Version: 0.0.1")
+    print("Bot angemeldet und aktiv, warte auf Befehle.")
 
-    ''''#Change Status
-    activity = discord.Game(name="MN-Marktplatz")
-    await client.change_presence(activity=activity)'''''
+#simple test command, new structure -
+@bot.command()
+async def ping(ctx):
+    await ctx.send("test")
 
-# normale facts
-@client.event
-async def on_message(message):
-    if message.author == client.user:
-        return
+#some facts about mns.
+@bot.command()
+async def nordhanar(ctx):
+    await ctx.send("Staatsform: parlamentarische Monarchie")
+    await ctx.send("Hauptstadt: Syffia")
+    await ctx.send("Staatsoberhaupt: Benedikt I.")
 
-    if message.content.startswith('$nordhanar'):
-        await message.channel.send('Staatsform: Monarchie')
-        await message.channel.send('Hauptstadt: Syffia')
-
-    if message.content.startswith('$ratelon'):
-        await message.channel.send('Staatsform: Republik')
-        await message.channel.send('Hauptstadt: Manuri')
-
-    if message.content.startswith('$dreibürgen'):
-        await message.channel.send('Staatsform: konstituionelle Monarchie')
-        await message.channel.send('Hauptstadt: Reichstal')
-
-client.run(TOKEN)
+bot.run(TOKEN)
