@@ -159,5 +159,12 @@ async def dreibürgen(ctx):
     embed.add_field(name="Einwohner", value = "ca. 319. Mio")
     await ctx.send(embed=embed)
 
+#falls command nicht existiert.
+@bot.event
+async def on_command_error(error, ctx):
+    if isinstance(error, commands.CommandNotFound):
+        await bot.send_message(ctx.message.channel, "Tut mir leid, aber dieser Befehl existiert nicht.")
+    else:
+        raise error
 
 bot.run(TOKEN)
