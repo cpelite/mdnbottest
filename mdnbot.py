@@ -18,7 +18,7 @@ bot = commands.Bot(command_prefix='$', intents=intents)
 #welcome message new
 @bot.event
 async def on_ready():
-    print("Entwickelt von: SvH - Bot-Version: 0.0.1")
+    print("Entwickelt von: SvH - Bot-Version: 0.1")
     print("Bot angemeldet und aktiv, warte auf Befehle.")
 
 #some facts about north-hanar
