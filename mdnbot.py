@@ -62,7 +62,7 @@ async def aquatropolis(ctx):
     embed.add_field(name="Staatsform", value="Diktatur")
     embed.add_field(name="Staatsoberhaupt", value="Jeanne Duchamp")
     embed.add_field(name="Einwohner", value="1.800.000")
-    embed.add_field(name="Kontinent", value="")
+    embed.add_field(name="Kontinent", value="nicht bekannt.")
     embed.add_field(name="Hauptstadt", value="Aquatropolis City")
     await ctx.send(embed=embed)
 
@@ -94,7 +94,7 @@ async def bengali(ctx):
     embed.add_field(name="Name des Staates", value="Bengali")
     embed.add_field(name="Staatsform", value="absolute Monarchie")
     embed.add_field(name="Staatsoberhaupt", value="Muawatalli Aliwata")
-    embed.add_field(name="Einwohner", value="")
+    embed.add_field(name="Einwohner", value="nicht bekannt")
     embed.add_field(name="Kontinent", value="Salvagiti")
     embed.add_field(name="Hauptstadt", value="Radeshasa")
     await ctx.send(embed=embed)
