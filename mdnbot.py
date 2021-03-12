@@ -164,7 +164,7 @@ async def dreibürgen(ctx):
 async def on_command_error(ctx, error):
     if isinstance(error, commands.CommandNotFound):
         embed = discord.Embed(title="Sorry!")
-        embed.add_field(name="Es tut mir leid..", value= "...aber der Befehl existiert leider (noch) nicht.")
-        await ctx.send(embed="embed")
+        embed.add_field(name="Es tut mir leid..", value = "...aber diesen Befehl / diese MN kenne ich leider (noch) nicht.")
+        await ctx.send(embed=embed)
 
 bot.run(TOKEN)
