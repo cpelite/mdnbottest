@@ -52,7 +52,25 @@ class spamberg(commands.Cog):
 
         return
 
+class nilsvonberg(commands.Cog):
+    def __init__(self,mdnbot):
+        self.bot = mdnbot
+
+    @commands.command()
+    async def nilsvonberg(self,ctx):
+        embed = discord.Embed(title="Fakten über eine MN-Persönlichkeit")
+        embed.add_field(name="Name der Person", value="Nils von Berg")
+        embed.add_field(name="Bekannt für", value="Inbegriff des MN-Militarismus")
+        embed.add_field(name="Aktuelle Heimatnation", value="Dreibürgen")
+        embed.add_field(name="Ämter die die Person bekleidet", value="Oberbefehlshaber der Marine")
+        embed.add_field(name="frühere nennenswerte Ämter", value="ehemaliger Reichskanzler, ehemaliger Reichsprotektor, ehemaliger Prinzregent von Stauffen")
+        embed.add_field(name="Funfact", value="Hat als er Fähnrich zur See das Sautieren erfunden.")
+        await ctx.send(embed=embed)
+
+        return
+
 def setup(mdnbot):
     mdnbot.add_cog(svh(mdnbot))
     mdnbot.add_cog(lordreis(mdnbot))
     mdnbot.add_cog(spamberg(mdnbot))
+    mdnbot.add_cog(nilsvonberg(mdnbot))
