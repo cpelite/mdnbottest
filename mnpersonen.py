@@ -77,7 +77,7 @@ class benjaminvonnehrenmann(commands.Cog):
     async def benjaminvonnehrenmann(self,ctx):
         embed = discord.Embed(title="Fakten über eine MN-Persönlichkeit")
         embed.add_field(name="Name der Person", value="Benjamin von Nehrenmann")
-        embed.add_field(name="Bekannt für", value="#JusTrimontania #JusAstoria")
+        embed.add_field(name="Bekannt für", value="#IusTrimontania #IusAstoria")
         embed.add_field(name="Aktuelle Heimatnation", value="Dreibürgen")
         embed.add_field(name="Ämter die die Person bekleidet", value="Hofkanzler")
         embed.add_field(name="frühere nennenswerte Ämter", value="-")
