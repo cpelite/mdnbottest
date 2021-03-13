@@ -6,6 +6,10 @@ Required Packages:
     os
     dotenv
 
+Preparations
+
+Follow the first part of this tutorial: https://www.freecodecamp.org/news/create-a-discord-bot-with-python/
+
 Step 1 - Installation of Python (for Ubuntu, Debian, and Derivates)
 
     sudo apt update

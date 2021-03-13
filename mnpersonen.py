@@ -47,7 +47,7 @@ class spamberg(commands.Cog):
         embed.add_field(name="Aktuelle Heimatnation", value="Dreibürgen")
         embed.add_field(name="Ämter die die Person bekleidet", value="Erbauer der Spamschanze")
         embed.add_field(name="frühere nennenswerte Ämter", value="-")
-        embed.add_field(name="Funfact", value="???")
+        embed.add_field(name="Funfact", value="Threadarchäologe")
         await ctx.send(embed=embed)
 
         return
