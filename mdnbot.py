@@ -220,7 +220,7 @@ async def freesland(ctx):
     await ctx.send(embed=embed)
 
 @bot.command()
-async def freesland(ctx):
+async def fuchsen(ctx):
     embed = discord.Embed(title="Fakten über Fuchsen")
     embed.add_field(name="Name des Staates", value="Freistaat Fuchsen")
     embed.add_field(name="Staatsform", value="basisdemokratische Republik")
@@ -317,17 +317,6 @@ async def livornien(ctx):
     embed.add_field(name="Einwohner", value="ca. 35.855.000")
     embed.add_field(name="Kontinent", value="Insel vor Antica")
     embed.add_field(name="Hauptstadt", value="Altburg")
-    await ctx.send(embed=embed)
-
-@bot.command()
-async def masowien(ctx):
-    embed = discord.Embed(title="Fakten über Masowien")
-    embed.add_field(name="Name des Staates", value="Demokratische Räterepublik Masowien-Baltonien")
-    embed.add_field(name="Staatsform", value="demokratische Räterepublik")
-    embed.add_field(name="Staatsoberhaupt", value="Gerdu Donk")
-    embed.add_field(name="Einwohner", value="-")
-    embed.add_field(name="Kontinent", value="Harnar")
-    embed.add_field(name="Hauptstadt", value="Masowien-Stadt")
     await ctx.send(embed=embed)
 
 @bot.command()
