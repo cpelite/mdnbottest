@@ -14,6 +14,7 @@ intents.members = True
 bot = commands.Bot(command_prefix='$', intents=intents)
 
 bot.load_extension("nationfacts")
+bot.load_extension("mnpersonen")
 
 #bot-start-up-message
 @bot.event
@@ -26,7 +27,7 @@ async def on_ready():
 async def botinfo(ctx):
     embed = discord.Embed(Title="Informationen über den Bot")
     embed.add_field(name="Entwickelt von", value="Sebastian von Hammer")
-    embed.add_field(name="Botversion", value="1.0 - Beta")
+    embed.add_field(name="Botversion", value="1.1 - Ritter der Kokosnuss")
     embed.add_field(name="Verwendete Programmiersprache", value="Python 3.9")
     embed.add_field(name="Verwendete Bibliotheken", value="discord.py, os, dotenv")
     await ctx.send(embed=embed)
