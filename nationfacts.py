@@ -360,6 +360,23 @@ class grannovara(commands.Cog):
 
         return
 
+class glenverness(commands.Cog):
+    def __init__(self, mdnbot):
+        self.bot = mdnbot
+
+    @commands.command()
+    async def glenverness(self,ctx):
+        embed = discord.Embed(title="Fakten über Glenverness")
+        embed.add_field(name="Name des Staates", value="The Royal Realm of Glenverness")
+        embed.add_field(name="Staatsform", value="konstitutionelle Monarchie")
+        embed.add_field(name="Staatsoberhaupt", value="Hermione III.")
+        embed.add_field(name="Einwohner", value="ca. 4.000.000")
+        embed.add_field(name="Kontinent", value="Insel vor Antica")
+        embed.add_field(name="Hauptstadt", value="Glenverdeen")
+        await ctx.send(embed=embed)
+
+        return
+
 class heijan(commands.Cog):
     def __init__(self, mdnbot):
         self.bot = mdnbot
