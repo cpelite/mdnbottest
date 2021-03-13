@@ -1,7 +1,7 @@
 from discord.ext import commands
 import discord
 
-class svh(commands.Cog):
+class personen(commands.Cog):
     def __init__(self,mdnbot):
         self.bot = mdnbot
 
@@ -18,10 +18,6 @@ class svh(commands.Cog):
 
         return
 
-class lordreis(commands.Cog):
-    def __init__(self,mdnbot):
-        self.bot = mdnbot
-
     @commands.command()
     async def lordreis(self,ctx):
         embed = discord.Embed(title="Fakten über eine MN-Persönlichkeit")
@@ -34,10 +30,6 @@ class lordreis(commands.Cog):
         await ctx.send(embed=embed)
 
         return
-
-class spamberg(commands.Cog):
-    def __init__(self,mdnbot):
-        self.bot = mdnbot
 
     @commands.command()
     async def spamberg(self,ctx):
@@ -52,10 +44,6 @@ class spamberg(commands.Cog):
 
         return
 
-class nilsvonberg(commands.Cog):
-    def __init__(self,mdnbot):
-        self.bot = mdnbot
-
     @commands.command()
     async def nilsvonberg(self,ctx):
         embed = discord.Embed(title="Fakten über eine MN-Persönlichkeit")
@@ -68,10 +56,6 @@ class nilsvonberg(commands.Cog):
         await ctx.send(embed=embed)
 
         return
-
-class benjaminvonnehrenmann(commands.Cog):
-    def __init__(self,mdnbot):
-        self.bot = mdnbot
 
     @commands.command()
     async def benjaminvonnehrenmann(self,ctx):
@@ -86,10 +70,6 @@ class benjaminvonnehrenmann(commands.Cog):
 
         return
 
-class oliviakaiser(commands.Cog):
-    def __init__(self,mdnbot):
-        self.bot = mdnbot
-
     @commands.command()
     async def oliviakaiser(self,ctx):
         embed = discord.Embed(title="Fakten über eine MN-Persönlichkeit")
@@ -102,10 +82,6 @@ class oliviakaiser(commands.Cog):
         await ctx.send(embed=embed)
 
         return
-
-class der(commands.Cog):
-    def __init__(self,mdnbot):
-        self.bot = mdnbot
 
     @commands.command()
     async def der(self,ctx):
@@ -120,10 +96,6 @@ class der(commands.Cog):
 
         return
 
-class buddenberg(commands.Cog):
-    def __init__(self,mdnbot):
-        self.bot = mdnbot
-
     @commands.command()
     async def buddenberg(self,ctx):
         embed = discord.Embed(title="Fakten über eine MN-Persönlichkeit")
@@ -136,10 +108,6 @@ class buddenberg(commands.Cog):
         await ctx.send(embed=embed)
 
         return
-
-class platzmeister(commands.Cog):
-    def __init__(self,mdnbot):
-        self.bot = mdnbot
 
     @commands.command()
     async def platzmeister(self,ctx):
@@ -154,10 +122,6 @@ class platzmeister(commands.Cog):
 
         return
 
-class denton(commands.Cog):
-    def __init__(self,mdnbot):
-        self.bot = mdnbot
-
     @commands.command()
     async def denton(self,ctx):
         embed = discord.Embed(title="Fakten über eine MN-Persönlichkeit")
@@ -170,10 +134,6 @@ class denton(commands.Cog):
         await ctx.send(embed=embed)
 
         return
-
-class hugovonsagen(commands.Cog):
-    def __init__(self,mdnbot):
-        self.bot = mdnbot
 
     @commands.command()
     async def hugovonsagen(self,ctx):
@@ -190,14 +150,4 @@ class hugovonsagen(commands.Cog):
 
 
 def setup(mdnbot):
-    mdnbot.add_cog(svh(mdnbot))
-    mdnbot.add_cog(lordreis(mdnbot))
-    mdnbot.add_cog(spamberg(mdnbot))
-    mdnbot.add_cog(nilsvonberg(mdnbot))
-    mdnbot.add_cog(benjaminvonnehrenmann(mdnbot))
-    mdnbot.add_cog(oliviakaiser(mdnbot))
-    mdnbot.add_cog(der(mdnbot))
-    mdnbot.add_cog(buddenberg(mdnbot))
-    mdnbot.add_cog(platzmeister(mdnbot))
-    mdnbot.add_cog(denton(mdnbot))
-    mdnbot.add_cog(hugovonsagen(mdnbot))
+    mdnbot.add_cog(personen)
