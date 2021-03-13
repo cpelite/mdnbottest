@@ -179,3 +179,7 @@ def setup(mdnbot):
     mdnbot.add_cog(nilsvonberg(mdnbot))
     mdnbot.add_cog(benjaminvonnehrenmann(mdnbot))
     mdnbot.add_cog(oliviakaiser(mdnbot))
+    mdnbot.add_cog(der(mdnbot))
+    mdnbot.add_cog(buddenberg(mdnbot))
+    mdnbot.add_cog(platzmeister(mdnbot))
+    mdnbot.add_cog(denton(mdnbot))
