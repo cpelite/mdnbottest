@@ -69,8 +69,27 @@ class nilsvonberg(commands.Cog):
 
         return
 
+class benjaminvonnehrenmann(commands.Cog):
+    def __init__(self,mdnbot):
+        self.bot = mdnbot
+
+    @commands.command()
+    async def benjaminvonnehrenmann(self,ctx):
+        embed = discord.Embed(title="Fakten über eine MN-Persönlichkeit")
+        embed.add_field(name="Name der Person", value="Benjamin von Nehrenmann")
+        embed.add_field(name="Bekannt für", value="#JusTrimontania #JusAstoria")
+        embed.add_field(name="Aktuelle Heimatnation", value="Dreibürgen")
+        embed.add_field(name="Ämter die die Person bekleidet", value="Hofkanzler")
+        embed.add_field(name="frühere nennenswerte Ämter", value="-")
+        embed.add_field(name="Funfact", value="Hat bei der Migration des Dreibürgen-Boards auf einen neuen Server, dasselbige als Schlampe bezeichnet.")
+        await ctx.send(embed=embed)
+
+        return
+
+
 def setup(mdnbot):
     mdnbot.add_cog(svh(mdnbot))
     mdnbot.add_cog(lordreis(mdnbot))
     mdnbot.add_cog(spamberg(mdnbot))
     mdnbot.add_cog(nilsvonberg(mdnbot))
+    mdnbot.add_cog(benjaminvonnehrenmann(mdnbot))
