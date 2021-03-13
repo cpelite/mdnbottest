@@ -149,7 +149,7 @@ class platzmeister(commands.Cog):
         embed.add_field(name="Aktuelle Heimatnation", value="Turanien")
         embed.add_field(name="Ämter die die Person bekleidet", value="Landeshauptmann von Schwion")
         embed.add_field(name="frühere nennenswerte Ämter", value="-")
-        embed.add_field(name="Funfact",value="-")
+        embed.add_field(name="Funfact",value="Vater des MN-Hostings.")
         await ctx.send(embed=embed)
 
         return
