@@ -86,6 +86,18 @@ class benjaminvonnehrenmann(commands.Cog):
 
         return
 
+class stephanieedgley(commands.Cog):
+    def __init__(self,mdnbot):
+        self.bot = mdnbot
+
+    @commands.command()
+    async def stephanieedgley(self,ctx):
+        embed = discord.Embed(title="Fakten über eine MN-Persönlichkeit")
+        embed.add_field(name="Stephanie Edgley...", value="ist nicht wichtig genug um hier genannt zu werden.")
+        await ctx.send(embed=embed)
+
+        return
+
 
 def setup(mdnbot):
     mdnbot.add_cog(svh(mdnbot))
@@ -93,3 +105,4 @@ def setup(mdnbot):
     mdnbot.add_cog(spamberg(mdnbot))
     mdnbot.add_cog(nilsvonberg(mdnbot))
     mdnbot.add_cog(benjaminvonnehrenmann(mdnbot))
+    mdnbot.add_cog(stephanieedgley(mdnbot))
