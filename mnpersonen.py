@@ -103,6 +103,74 @@ class oliviakaiser(commands.Cog):
 
         return
 
+class der(commands.Cog):
+    def __init__(self,mdnbot):
+        self.bot = mdnbot
+
+    @commands.command()
+    async def der(self,ctx):
+        embed = discord.Embed(title="Fakten über eine MN-Persönlichkeit")
+        embed.add_field(name="Name der Person", value="Giuseppe de Rossi")
+        embed.add_field(name="Bekannt für", value="Design-Papst der MNs")
+        embed.add_field(name="Aktuelle Heimatnation", value="Gran Novara")
+        embed.add_field(name="Ämter die die Person bekleidet", value="-")
+        embed.add_field(name="frühere nennenswerte Ämter", value="-")
+        embed.add_field(name="Funfact",value="-")
+        await ctx.send(embed=embed)
+
+        return
+
+class buddenberg(commands.Cog):
+    def __init__(self,mdnbot):
+        self.bot = mdnbot
+
+    @commands.command()
+    async def buddenberg(self,ctx):
+        embed = discord.Embed(title="Fakten über eine MN-Persönlichkeit")
+        embed.add_field(name="Name der Person", value="Dionysos Buddenberg")
+        embed.add_field(name="Bekannt für", value="Förderung der kulturellen Szene in den MNs")
+        embed.add_field(name="Aktuelle Heimatnation", value="Albernia")
+        embed.add_field(name="Ämter die die Person bekleidet", value="-")
+        embed.add_field(name="frühere nennenswerte Ämter", value="-")
+        embed.add_field(name="Funfact",value="-")
+        await ctx.send(embed=embed)
+
+        return
+
+class platzmeister(commands.Cog):
+    def __init__(self,mdnbot):
+        self.bot = mdnbot
+
+    @commands.command()
+    async def platzmeister(self,ctx):
+        embed = discord.Embed(title="Fakten über eine MN-Persönlichkeit")
+        embed.add_field(name="Name der Person", value="Platzmeister / Attila Saxburger")
+        embed.add_field(name="Bekannt für", value="Dienstleistungen rund um die MNs (Minasol)")
+        embed.add_field(name="Aktuelle Heimatnation", value="Turanien")
+        embed.add_field(name="Ämter die die Person bekleidet", value="Landeshauptmann von Schwion")
+        embed.add_field(name="frühere nennenswerte Ämter", value="-")
+        embed.add_field(name="Funfact",value="-")
+        await ctx.send(embed=embed)
+
+        return
+
+class denton(commands.Cog):
+    def __init__(self,mdnbot):
+        self.bot = mdnbot
+
+    @commands.command()
+    async def denton(self,ctx):
+        embed = discord.Embed(title="Fakten über eine MN-Persönlichkeit")
+        embed.add_field(name="Name der Person", value="Adam Denton")
+        embed.add_field(name="Bekannt für", value="Entwickler diverser Plugins für MNs zu Zeiten des WBB3.")
+        embed.add_field(name="Aktuelle Heimatnation", value="Astor")
+        embed.add_field(name="Ämter die die Person bekleidet", value="-")
+        embed.add_field(name="frühere nennenswerte Ämter", value="President of the United States")
+        embed.add_field(name="Funfact",value="-")
+        await ctx.send(embed=embed)
+
+        return
+
 
 def setup(mdnbot):
     mdnbot.add_cog(svh(mdnbot))
