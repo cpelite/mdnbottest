@@ -13,13 +13,16 @@ intents = discord.Intents.default()
 intents.members = True
 bot = commands.Bot(command_prefix='$', intents=intents)
 
+#Load cogs.
 bot.load_extension("nationfacts")
 bot.load_extension("mnpersonen")
+bot.load_extension("linkliste")
+
 
 #bot-start-up-message
 @bot.event
 async def on_ready():
-    print("Entwickelt von: SvH - Bot-Version: 1.1")
+    print("Entwickelt von: SvH - Bot-Version: 1.2")
     print("Bot angemeldet und aktiv, warte auf Befehle.")
 
 #bot-version-infos
@@ -27,7 +30,7 @@ async def on_ready():
 async def botinfo(ctx):
     embed = discord.Embed(Title="Informationen über den Bot")
     embed.add_field(name="Entwickelt von", value="Sebastian von Hammer")
-    embed.add_field(name="Botversion", value="1.1 - Ritter der Kokosnuss")
+    embed.add_field(name="Botversion", value="1.2 - Tis' nothing but a scratch!")
     embed.add_field(name="Verwendete Programmiersprache", value="Python 3.9")
     embed.add_field(name="Verwendete Bibliotheken", value="discord.py, os, dotenv")
     await ctx.send(embed=embed)
