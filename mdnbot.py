@@ -320,7 +320,7 @@ async def livornien(ctx):
     await ctx.send(embed=embed)
 
 @bot.command()
-async def monikburg(ctx):
+async def monikberg(ctx):
     embed = discord.Embed(title="Fakten über Münchberg")
     embed.add_field(name="Name des Staates", value="Monikberg")
     embed.add_field(name="Staatsform", value="konstitutionelle Monarchie")
@@ -464,6 +464,17 @@ async def tiszana(ctx):
     embed.add_field(name="Einwohner", value="43.858.298")
     embed.add_field(name="Kontinent", value="Antica")
     embed.add_field(name="Hauptstadt", value="Sorana")
+    await ctx.send(embed=embed)
+
+@bot.command()
+async def turanien(ctx):
+    embed = discord.Embed(title="Fakten über Turanien")
+    embed.add_field(name="Name des Staates", value="Turanische Föderation")
+    embed.add_field(name="Staatsform", value="parlamentarische Demokratie")
+    embed.add_field(name="Staatsoberhaupt", value="Sigurd Thorwald")
+    embed.add_field(name="Einwohner", value="50.048.300")
+    embed.add_field(name="Kontinent", value="Antica")
+    embed.add_field(name="Hauptstadt", value="Turan")
     await ctx.send(embed=embed)
 
 @bot.command()
