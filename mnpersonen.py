@@ -86,14 +86,14 @@ class benjaminvonnehrenmann(commands.Cog):
 
         return
 
-class stephanieedgley(commands.Cog):
+class oliviakaiser(commands.Cog):
     def __init__(self,mdnbot):
         self.bot = mdnbot
 
     @commands.command()
-    async def stephanieedgley(self,ctx):
+    async def oliviakaiser(self,ctx):
         embed = discord.Embed(title="Fakten über eine MN-Persönlichkeit")
-        embed.add_field(name="Name der Person", value="Stephany Edgley")
+        embed.add_field(name="Name der Person", value="Olivia Kaiser")
         embed.add_field(name="Bekannt für", value="Ausarbeitung des Gesundheitsberichts in Dreibürgen")
         embed.add_field(name="Aktuelle Heimatnation", value="Dreibürgen")
         embed.add_field(name="Ämter die die Person bekleidet", value="Reichsministerin für Gesundheit")
@@ -110,4 +110,4 @@ def setup(mdnbot):
     mdnbot.add_cog(spamberg(mdnbot))
     mdnbot.add_cog(nilsvonberg(mdnbot))
     mdnbot.add_cog(benjaminvonnehrenmann(mdnbot))
-    mdnbot.add_cog(stephanieedgley(mdnbot))
+    mdnbot.add_cog(oliviakaiser(mdnbot))
