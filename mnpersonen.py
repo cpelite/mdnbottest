@@ -171,6 +171,23 @@ class denton(commands.Cog):
 
         return
 
+class hugovonsagen(commands.Cog):
+    def __init__(self,mdnbot):
+        self.bot = mdnbot
+
+    @commands.command()
+    async def hugovonsagen(self,ctx):
+        embed = discord.Embed(title="Fakten über eine MN-Persönlichkeit")
+        embed.add_field(name="Name der Person", value="Hugo von Sagen")
+        embed.add_field(name="Bekannt für", value="Dreibürgische Außeneule")
+        embed.add_field(name="Aktuelle Heimatnation", value="Dreibürgen")
+        embed.add_field(name="Ämter die die Person bekleidet", value="Reichsminister")
+        embed.add_field(name="frühere nennenswerte Ämter", value="ehem. Reichskanzler, Reichstagspräsident und Reichsminister des Auswärtigen")
+        embed.add_field(name="Funfact",value="Ließ ein diplomatisches Schreiben aus Pottyland schreddern.")
+        await ctx.send(embed=embed)
+
+        return
+
 
 def setup(mdnbot):
     mdnbot.add_cog(svh(mdnbot))
@@ -183,3 +200,4 @@ def setup(mdnbot):
     mdnbot.add_cog(buddenberg(mdnbot))
     mdnbot.add_cog(platzmeister(mdnbot))
     mdnbot.add_cog(denton(mdnbot))
+    mdnbot.add_cog(hugovonsagen(mdnbot))
