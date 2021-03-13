@@ -844,3 +844,4 @@ def setup(mdnbot):
     mdnbot.add_cog(valsanto(mdnbot))
     mdnbot.add_cog(westnerica(mdnbot))
     mdnbot.add_cog(zedarien(mdnbot))
+    mdnbot.add_cog(glenverness(mdnbot))
