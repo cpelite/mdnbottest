@@ -93,7 +93,12 @@ class stephanieedgley(commands.Cog):
     @commands.command()
     async def stephanieedgley(self,ctx):
         embed = discord.Embed(title="Fakten über eine MN-Persönlichkeit")
-        embed.add_field(name="Stephanie Edgley...", value="ist nicht wichtig genug um hier genannt zu werden.")
+        embed.add_field(name="Name der Person", value="Stephany Edgley")
+        embed.add_field(name="Bekannt für", value="Ausarbeitung des Gesundheitsberichts in Dreibürgen")
+        embed.add_field(name="Aktuelle Heimatnation", value="Dreibürgen")
+        embed.add_field(name="Ämter die die Person bekleidet", value="Reichsministerin für Gesundheit")
+        embed.add_field(name="frühere nennenswerte Ämter", value="-")
+        embed.add_field(name="Funfact",value="-")
         await ctx.send(embed=embed)
 
         return
