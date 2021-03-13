@@ -150,4 +150,4 @@ class personen(commands.Cog):
 
 
 def setup(mdnbot):
-    mdnbot.add_cog(personen)
+    mdnbot.add_cog(personen(mdnbot))
