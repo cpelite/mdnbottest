@@ -8,7 +8,7 @@ class astor(commands.Cog):
         self.bot = mdnbot
 
     @commands.command()
-    async def astor(ctx):
+    async def astor(self,ctx):
         embed = discord.Embed(title="Fakten über Astor")
         embed.add_field(name="Name des Staates", value="United States of Astor")
         embed.add_field(name="Staatsform", value="präsidiale Republik")
@@ -25,7 +25,7 @@ class albernia(commands.Cog):
         self.bot = mdnbot
 
     @commands.command()
-    async def albernia(ctx):
+    async def albernia(self,ctx):
         embed = discord.Embed(title="Fakten über Albernia")
         embed.add_field(name="Name des Staates", value="Kingdom of Albernia")
         embed.add_field(name="Staatsform", value="parlamentarische Monarchie")
@@ -42,7 +42,7 @@ class alsztyna(commands.Cog):
         self.bot = mdnbot
 
     @commands.command()
-    async def alsztyna(ctx):
+    async def alsztyna(self,ctx):
         embed = discord.Embed(title="Fakten über Alsztyna")
         embed.add_field(name="Name des Staates", value="Freie Hansestadt Alsztyna")
         embed.add_field(name="Staatsform", value="Demokratie")
@@ -59,7 +59,7 @@ class aquatropolis(commands.Cog):
         self.bot = mdnbot
 
     @commands.command()
-    async def aquatropolis(ctx):
+    async def aquatropolis(self,ctx):
         embed = discord.Embed(title="Fakten über Aquatropolis")
         embed.add_field(name="Name des Staates", value="Seereich Aquatropolis")
         embed.add_field(name="Staatsform", value="Diktatur")
@@ -76,7 +76,7 @@ class andro(commands.Cog):
         self.bot = mdnbot
 
     @commands.command()
-    async def andro(ctx):
+    async def andro(self,ctx):
         embed = discord.Embed(title="Fakten über Andro")
         embed.add_field(name="Name des Staates", value="Föderale Republik Andro")
         embed.add_field(name="Staatsform", value="föderale Demokratie")
@@ -93,7 +93,7 @@ class barnstorvia(commands.Cog):
         self.bot = mdnbot
 
     @commands.command()
-    async def barnstorvia(ctx):
+    async def barnstorvia(self,ctx):
         embed = discord.Embed(title="Fakten über Barnstorvia")
         embed.add_field(name="Name des Staates", value="Royaume de Barnstorvia")
         embed.add_field(name="Staatsform", value="konst. Monarchie")
@@ -110,7 +110,7 @@ class bengali(commands.Cog):
         self.bot = mdnbot
 
     @commands.command()
-    async def bengali(ctx):
+    async def bengali(self,ctx):
         embed = discord.Embed(title="Fakten über Bengali")
         embed.add_field(name="Name des Staates", value="Bengali")
         embed.add_field(name="Staatsform", value="absolute Monarchie")
@@ -127,7 +127,7 @@ class bergen(commands.Cog):
         self.bot = mdnbot
 
     @commands.command()
-    async def bergen(ctx):
+    async def bergen(self,ctx):
         embed = discord.Embed(title="Fakten über Bergen")
         embed.add_field(name="Name des Staates", value="Bergen")
         embed.add_field(name="Staatsform", value="parlamentarische Republik")
@@ -144,7 +144,7 @@ class chinopien(commands.Cog):
         self.bot = mdnbot
 
     @commands.command()
-    async def chinopien(ctx):
+    async def chinopien(self,ctx):
         embed = discord.Embed(title="Fakten über Chinopien")
         embed.add_field(name="Name des Staates", value="Kaiserreich Chinopien")
         embed.add_field(name="Staatsform", value="absolute Monarchie")
@@ -161,7 +161,7 @@ class cranberra(commands.Cog):
         self.bot = mdnbot
 
     @commands.command()
-    async def cranberra(ctx):
+    async def cranberra(self,ctx):
         embed = discord.Embed(title="Fakten über Cranberra")
         embed.add_field(name="Name des Staates", value="Dominion of Cranberra")
         embed.add_field(name="Staatsform", value="parl. Monarchie")
@@ -178,7 +178,7 @@ class daivan(commands.Cog):
         self.bot = mdnbot
 
     @commands.command()
-    async def daivan(ctx):
+    async def daivan(self,ctx):
         embed = discord.Embed(title="Fakten über Daivan")
         embed.add_field(name="Name des Staates", value="Volksrepublik Daivan")
         embed.add_field(name="Staatsform", value="Volksrepublik")
@@ -195,7 +195,7 @@ class ratelon(commands.Cog):
         self.bot = mdnbot
 
     @commands.command()
-    async def ratelon(ctx):
+    async def ratelon(self,ctx):
         embed = discord.Embed(title="Fakten über die Demokratische Union Ratelon")
         embed.add_field(name="Name des Staates", value="Demokratische Union Ratelon")
         embed.add_field(name="Staatsform", value="föderale Republik")
@@ -212,7 +212,7 @@ class dionysos(commands.Cog):
         self.bot = mdnbot
 
     @commands.command()
-    async def dionysos(ctx):
+    async def dionysos(self,ctx):
         embed = discord.Embed(title="Fakten über Dionysos")
         embed.add_field(name="Name des Staates", value="Dionysos")
         embed.add_field(name="Staatsform", value="parlamentarische Demokratie")
@@ -229,7 +229,7 @@ class dreibürgen(commands.Cog):
         self.bot = mdnbot
 
     @commands.command()
-    async def dreibürgen(ctx):
+    async def dreibürgen(self,ctx):
         embed = discord.Embed(title="Fakten über das Kaiserreich Dreibürgen")
         embed.add_field(name="Name des Staates", value="Kaiserreich Dreibürgen")
         embed.add_field(name="Staatsform", value="konstitutionelle Monarchie")
@@ -246,7 +246,7 @@ class eldeyja(commands.Cog):
         self.bot = mdnbot
 
     @commands.command()
-    async def eldeyja(ctx):
+    async def eldeyja(self,ctx):
         embed = discord.Embed(title="Fakten über Eldeyja")
         embed.add_field(name="Name des Staates", value="Eldeyja")
         embed.add_field(name="Staatsform", value="parlamentarische Demokratie")
@@ -263,7 +263,7 @@ class flandrien(commands.Cog):
         self.bot = mdnbot
 
     @commands.command()
-    async def flandrien(ctx):
+    async def flandrien(self,ctx):
         embed = discord.Embed(title="Fakten über Flandrien")
         embed.add_field(name="Name des Staates", value="Flandrien")
         embed.add_field(name="Staatsform", value="sozialistische Demokratie")
@@ -280,7 +280,7 @@ class freesland(commands.Cog):
         self.bot = mdnbot
 
     @commands.command()
-    async def freesland(ctx):
+    async def freesland(self,ctx):
         embed = discord.Embed(title="Fakten über Freesland")
         embed.add_field(name="Name des Staates", value="Königreich Freesland")
         embed.add_field(name="Staatsform", value="konstitutionelle Monarchie")
@@ -297,7 +297,7 @@ class fuchsen(commands.Cog):
         self.bot = mdnbot
 
     @commands.command()
-    async def fuchsen(ctx):
+    async def fuchsen(self,ctx):
         embed = discord.Embed(title="Fakten über Fuchsen")
         embed.add_field(name="Name des Staates", value="Freistaat Fuchsen")
         embed.add_field(name="Staatsform", value="basisdemokratische Republik")
@@ -314,7 +314,7 @@ class fuso(commands.Cog):
         self.bot = mdnbot
 
     @commands.command()
-    async def fuso(ctx):
+    async def fuso(self,ctx):
         embed = discord.Embed(title="Fakten über Fuso")
         embed.add_field(name="Name des Staates", value="Fuso Teikoku")
         embed.add_field(name="Staatsform", value="konstitutionelle Monarchie")
@@ -331,7 +331,7 @@ class futuna(commands.Cog):
         self.bot = mdnbot
 
     @commands.command()
-    async def futuna(ctx):
+    async def futuna(self,ctx):
         embed = discord.Embed(title="Fakten über Futuna")
         embed.add_field(name="Name des Staates", value="Futunische Hegemonie")
         embed.add_field(name="Staatsform", value="Verband der futunischen Zivilisation")
@@ -348,7 +348,7 @@ class grannovara(commands.Cog):
         self.bot = mdnbot
 
     @commands.command()
-    async def grannovara(ctx):
+    async def grannovara(self,ctx):
         embed = discord.Embed(title="Fakten über Gran Novara")
         embed.add_field(name="Name des Staates", value="Regno di Gran Novara")
         embed.add_field(name="Staatsform", value="konstitutionell-ständische Monarchie")
@@ -365,7 +365,7 @@ class heijan(commands.Cog):
         self.bot = mdnbot
 
     @commands.command()
-    async def heijan(ctx):
+    async def heijan(self,ctx):
         embed = discord.Embed(title="Fakten über Heijan")
         embed.add_field(name="Name des Staates", value="Kaiserreich Heijan")
         embed.add_field(name="Staatsform", value="konstitutionelle Monarchie")
@@ -382,7 +382,7 @@ class ladinien(commands.Cog):
         self.bot = mdnbot
 
     @commands.command()
-    async def ladinien(ctx):
+    async def ladinien(self,ctx):
         embed = discord.Embed(title="Fakten über Ladinien")
         embed.add_field(name="Name des Staates", value="Imperium Ladinorum")
         embed.add_field(name="Staatsform", value="absolute Monarchie (Institutionelle Dyarchie)")
@@ -399,7 +399,7 @@ class korland(commands.Cog):
         self.bot = mdnbot
 
     @commands.command()
-    async def korland(ctx):
+    async def korland(self,ctx):
         embed = discord.Embed(title="Fakten über Korland")
         embed.add_field(name="Name des Staates", value="Freistaat Korland")
         embed.add_field(name="Staatsform", value="Ständestaat")
@@ -416,7 +416,7 @@ class masowien(commands.Cog):
         self.bot = mdnbot
 
     @commands.command()
-    async def masowien(ctx):
+    async def masowien(self,ctx):
         embed = discord.Embed(title="Fakten über Masowien")
         embed.add_field(name="Name des Staates", value="Demokratische Räterepublik Masowien-Baltonien")
         embed.add_field(name="Staatsform", value="demokratische Räterepublik")
@@ -433,7 +433,7 @@ class livornien(commands.Cog):
         self.bot = mdnbot
 
     @commands.command()
-    async def livornien(ctx):
+    async def livornien(self,ctx):
         embed = discord.Embed(title="Fakten über Livornien")
         embed.add_field(name="Name des Staates", value="Königreich beider Archipele Livornien und Melba")
         embed.add_field(name="Staatsform", value="konstitutionelle Monarchie")
@@ -450,7 +450,7 @@ class monikberg(commands.Cog):
         self.bot = mdnbot
 
     @commands.command()
-    async def monikberg(ctx):
+    async def monikberg(self,ctx):
         embed = discord.Embed(title="Fakten über Münchberg")
         embed.add_field(name="Name des Staates", value="Monikberg")
         embed.add_field(name="Staatsform", value="konstitutionelle Monarchie")
@@ -467,7 +467,7 @@ class naulakha(commands.Cog):
         self.bot = mdnbot
 
     @commands.command()
-    async def naulakha(ctx):
+    async def naulakha(self,ctx):
         embed = discord.Embed(title="Fakten über Naulakha")
         embed.add_field(name="Name des Staates", value="Herzogtum Naulakha")
         embed.add_field(name="Staatsform", value="konstitutionelle Monarchie")
@@ -484,7 +484,7 @@ class nordhanar(commands.Cog):
         self.bot = mdnbot
 
     @commands.command()
-    async def nordhanar(ctx):
+    async def nordhanar(self,ctx):
         embed = discord.Embed(title="Fakten über Nordhanar")
         embed.add_field(name="Name des Staates", value="Vereinigtes Kaiserthum von Nordhanar")
         embed.add_field(name="Staatsform", value="parlamentarische Wahlmonarchie")
@@ -501,7 +501,7 @@ class nordmark(commands.Cog):
         self.bot = mdnbot
 
     @commands.command()
-    async def nordmark(ctx):
+    async def nordmark(self,ctx):
         embed = discord.Embed(title="Fakten über Nordmark")
         embed.add_field(name="Name des Staates", value="Vereinigtes Königreich der Nordmark")
         embed.add_field(name="Staatsform", value="konstitutionelle Wahlmonarchie")
@@ -518,7 +518,7 @@ class pottyland(commands.Cog):
         self.bot = mdnbot
 
     @commands.command()
-    async def pottyland(ctx):
+    async def pottyland(self,ctx):
         embed = discord.Embed(title="Fakten über Pottyland")
         embed.add_field(name="Name des Staates", value="Königreich Pottyland")
         embed.add_field(name="Staatsform", value="absolute Monarchie")
@@ -535,7 +535,7 @@ class sancristobal(commands.Cog):
         self.bot = mdnbot
 
     @commands.command()
-    async def sancristobal(ctx):
+    async def sancristobal(self,ctx):
         embed = discord.Embed(title="Fakten über San Cristobal")
         embed.add_field(name="Name des Staates", value="Republik San Cristobal")
         embed.add_field(name="Staatsform", value="Militärregierung")
@@ -552,7 +552,7 @@ class schwarzhahnland(commands.Cog):
         self.bot = mdnbot
 
     @commands.command()
-    async def schwarzhahnland(ctx):
+    async def schwarzhahnland(self,ctx):
         embed = discord.Embed(title="Fakten über das Schwarzhahnland")
         embed.add_field(name="Name des Staates", value="Schwarzhahnland")
         embed.add_field(name="Staatsform", value="Militärregierung")
@@ -569,7 +569,7 @@ class severanien(commands.Cog):
         self.bot = mdnbot
 
     @commands.command()
-    async def severanien(ctx):
+    async def severanien(self,ctx):
         embed = discord.Embed(title="Fakten über Severanien")
         embed.add_field(name="Name des Staates", value="Bundesrepublik Severanien")
         embed.add_field(name="Staatsform", value="präsidiale Bundesrepublik")
@@ -586,7 +586,7 @@ class slezsko(commands.Cog):
         self.bot = mdnbot
 
     @commands.command()
-    async def slezsko(ctx):
+    async def slezsko(self,ctx):
         embed = discord.Embed(title="Fakten über Slezsko")
         embed.add_field(name="Name des Staates", value="Slezsko")
         embed.add_field(name="Staatsform", value="präsidiale Republik")
@@ -603,7 +603,7 @@ class soleado(commands.Cog):
         self.bot = mdnbot
 
     @commands.command()
-    async def soleado(ctx):
+    async def soleado(self,ctx):
         embed = discord.Embed(title="Fakten über Soleado")
         embed.add_field(name="Name des Staates", value="La Republica de Soleado")
         embed.add_field(name="Staatsform", value="präsidiale Republik")
@@ -620,7 +620,7 @@ class targa(commands.Cog):
         self.bot = mdnbot
 
     @commands.command()
-    async def targa(ctx):
+    async def targa(self,ctx):
         embed = discord.Embed(title="Fakten über Targa")
         embed.add_field(name="Name des Staates", value="Al Mamluka al Targa")
         embed.add_field(name="Staatsform", value="föderal-konstitutionelle Monarchie")
@@ -637,7 +637,7 @@ class tirnanog(commands.Cog):
         self.bot = mdnbot
 
     @commands.command()
-    async def tirnanog(ctx):
+    async def tirnanog(self,ctx):
         embed = discord.Embed(title="Fakten über Tir na nOg")
         embed.add_field(name="Name des Staates", value="Freie Republik Tir na nOg")
         embed.add_field(name="Staatsform", value="Räterepublik")
@@ -654,7 +654,7 @@ class tiszana(commands.Cog):
         self.bot = mdnbot
 
     @commands.command()
-    async def tiszana(ctx):
+    async def tiszana(self,ctx):
         embed = discord.Embed(title="Fakten über Tiszana")
         embed.add_field(name="Name des Staates", value="Regatul Tiszana")
         embed.add_field(name="Staatsform", value="konstitutionelle Monarchie")
@@ -671,7 +671,7 @@ class turanien(commands.Cog):
         self.bot = mdnbot
 
     @commands.command()
-    async def turanien(ctx):
+    async def turanien(self,ctx):
         embed = discord.Embed(title="Fakten über Turanien")
         embed.add_field(name="Name des Staates", value="Turanische Föderation")
         embed.add_field(name="Staatsform", value="parlamentarische Demokratie")
@@ -688,7 +688,7 @@ class underbergen(commands.Cog):
         self.bot = mdnbot
 
     @commands.command()
-    async def underbergen(ctx):
+    async def underbergen(self,ctx):
         embed = discord.Embed(title="Fakten über Underbergen")
         embed.add_field(name="Name des Staates", value="Freie Stadt Unterbergen")
         embed.add_field(name="Staatsform", value="parlamentarische Demokratie")
@@ -705,7 +705,7 @@ class valorien(commands.Cog):
         self.bot = mdnbot
 
     @commands.command()
-    async def valorien(ctx):
+    async def valorien(self,ctx):
         embed = discord.Embed(title="Fakten über Valorien")
         embed.add_field(name="Name des Staates", value="Grand-Marechalat de la Valorie")
         embed.add_field(name="Staatsform", value="Militärregierung")
@@ -722,7 +722,7 @@ class valsanto(commands.Cog):
         self.bot = mdnbot
 
     @commands.command()
-    async def valsanto(ctx):
+    async def valsanto(self,ctx):
         embed = discord.Embed(title="Fakten über Valsanto")
         embed.add_field(name="Name des Staates", value="Status Valsantinus")
         embed.add_field(name="Staatsform", value="absolute Monarchie")
@@ -739,7 +739,7 @@ class verland(commands.Cog):
         self.bot = mdnbot
 
     @commands.command()
-    async def verland(ctx):
+    async def verland(self,ctx):
         embed = discord.Embed(title="Fakten über Verland")
         embed.add_field(name="Name des Staates", value="Frystaat Verland")
         embed.add_field(name="Staatsform", value="präsidiale Republik")
@@ -756,7 +756,7 @@ class westnerica(commands.Cog):
         self.bot = mdnbot
 
     @commands.command()
-    async def westnerica(ctx):
+    async def westnerica(self,ctx):
         embed = discord.Embed(title="Fakten über West Nerica")
         embed.add_field(name="Name des Staates", value="Republic of West Nerica")
         embed.add_field(name="Staatsform", value="parlamentarische Demokratie")
@@ -773,7 +773,7 @@ class zedarien(commands.Cog):
         self.bot = mdnbot
 
     @commands.command()
-    async def zedarien(ctx):
+    async def zedarien(self,ctx):
         embed = discord.Embed(title="Fakten über Zedarien")
         embed.add_field(name="Name des Staates", value="Zedarien")
         embed.add_field(name="Staatsform", value="sozialistischer Einparteienstaat")
