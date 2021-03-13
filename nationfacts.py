@@ -250,7 +250,7 @@ class eldeyja(commands.Cog):
         embed = discord.Embed(title="Fakten über Eldeyja")
         embed.add_field(name="Name des Staates", value="Eldeyja")
         embed.add_field(name="Staatsform", value="parlamentarische Demokratie")
-        embed.add_field(name="Staatsoberhaupt", value="-")
+        embed.add_field(name="Staatsoberhaupt", value="Jónas Sigurðsson")
         embed.add_field(name="Einwohner", value="565.000")
         embed.add_field(name="Kontinent", value="Insel im Nordanik")
         embed.add_field(name="Hauptstadt", value="Höfudfjördur")
