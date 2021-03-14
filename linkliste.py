@@ -15,5 +15,14 @@ class allgemeineangebote(commands.Cog):
 
         return
 
+    @commands.command()
+    async def organisationen(self, ctx):
+        embed = discord.Embed(title="Organisationen")
+        embed.add_field(name="Internationale Organisation für Flugverkehr (IOF)", value="https://iof.mn-orga.de")
+        embed.add_field(name="Internationale Organisation für Weltraumangelegenheiten (IOWA)", value="https://iowa.mn-orga.de")
+        embed.add_field(name="Internationaler Rat", value="https://livornien.li/woltlab/index.php?board/540-maison-des-nations/")
+        embed.add_field(name="Völkerbund", value="https://du.mn-welt.de/board/index.php?board/281-völkerbund/")
+        await ctx.send(embed=embed)
+
 def setup(mdnbot):
     mdnbot.add_cog(allgemeineangebote(mdnbot))
