@@ -78,7 +78,7 @@ class personen(commands.Cog):
         embed.add_field(name="Aktuelle Heimatnation", value="Dreibürgen")
         embed.add_field(name="Ämter die die Person bekleidet", value="Reichsministerin für Gesundheit")
         embed.add_field(name="frühere nennenswerte Ämter", value="-")
-        embed.add_field(name="Funfact",value="-")
+        embed.add_field(name="Funfact",value="Traumatisiert gerne Mitspieler.")
         await ctx.send(embed=embed)
 
         return
