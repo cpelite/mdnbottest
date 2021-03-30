@@ -148,6 +148,18 @@ class personen(commands.Cog):
 
         return
 
+    @commands.command()
+    async def heinzlüneburg(self, ctx):
+        embed = discord.Embed(title="Fakten über eine MN-Persönlichkeit")
+        embed.add_field(name="Name der Person", value="Heinz Lüneburg")
+        embed.add_field(name="Bekannt für", value="Unionspräsident Ratelons")
+        embed.add_field(name="Ämter die die Person bekleidet", value="Unionspräsident")
+        embed.add_field(name="frühere nennenswerte Ämter", value="Ministerpräsident von Salbor-Katista")
+        embed.add_field(name="Funfact", value="Hat Bont fast zum Rücktritt gebracht, traumatisiert gerne Delta.")
+        await ctx.send(embed=embed)
+
+        return
+
 
 def setup(mdnbot):
     mdnbot.add_cog(personen(mdnbot))
