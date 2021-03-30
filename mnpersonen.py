@@ -64,7 +64,7 @@ class personen(commands.Cog):
         embed.add_field(name="Bekannt für", value="#IusTrimontania #IusAstoria")
         embed.add_field(name="Aktuelle Heimatnation", value="Dreibürgen")
         embed.add_field(name="Ämter die die Person bekleidet", value="Hofkanzler")
-        embed.add_field(name="frühere nennenswerte Ämter", value="-")
+        embed.add_field(name="frühere nennenswerte Ämter", value="Reichsjustizminister")
         embed.add_field(name="Funfact", value="Hat bei der Migration des Dreibürgen-Boards auf einen neuen Server, dasselbige als Schlampe bezeichnet.")
         await ctx.send(embed=embed)
 
@@ -152,7 +152,8 @@ class personen(commands.Cog):
     async def heinzlüneburg(self, ctx):
         embed = discord.Embed(title="Fakten über eine MN-Persönlichkeit")
         embed.add_field(name="Name der Person", value="Heinz Lüneburg")
-        embed.add_field(name="Bekannt für", value="Unionspräsident Ratelons")
+        embed.add_field(name="Bekannt für", value="Sammelt Sperrungen wie Panini-Sticker.")
+        embed.add_field(name="Heimatnation", value="Ratelon")
         embed.add_field(name="Ämter die die Person bekleidet", value="Unionspräsident")
         embed.add_field(name="frühere nennenswerte Ämter", value="Ministerpräsident von Salbor-Katista")
         embed.add_field(name="Funfact", value="Hat Bont fast zum Rücktritt gebracht, traumatisiert gerne Delta.")
