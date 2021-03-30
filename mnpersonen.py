@@ -11,7 +11,7 @@ class personen(commands.Cog):
         embed.add_field(name="Name der Person", value="Sebastian von Hammer")
         embed.add_field(name="Bekannt für", value="Entwickler des MN-Bots")
         embed.add_field(name="Aktuelle Heimatnation", value="Nordhanar")
-        embed.add_field(name="Ämter die die Person bekleidet", value="Mitglied der Reichsdiät, Gouverneur von San Vezzano")
+        embed.add_field(name="Ämter die die Person bekleidet", value="Mitglied der Reichsdiät, Minister für Äußeres und int. Kooperation")
         embed.add_field(name="frühere nennenswerte Ämter", value="ehemaliger dreibürgischer Reichskanzler")
         embed.add_field(name="Funfact", value="Wurde durch einen Putsch aus seinem Amt gejagt.")
         await ctx.send(embed=embed)
