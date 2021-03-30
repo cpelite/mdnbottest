@@ -5,4 +5,4 @@ echo "Aktiviere VENV"
 source venv/bin/activate
 echo "Starte Bot"
 nohup python3 mdnbot.py
-echo "Bot gestartet"
+echo "Beende Bot."
