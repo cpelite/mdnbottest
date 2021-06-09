@@ -30,7 +30,7 @@ async def on_ready():
 async def botinfo(ctx):
     embed = discord.Embed(Title="Informationen über den Bot")
     embed.add_field(name="Entwickelt von", value="Sebastian von Hammer")
-    embed.add_field(name="Botversion", value="1.3 - Die heilige Handgranate!")
+    embed.add_field(name="Botversion", value="2.0 - Wir sind die Volksfront von Judäa!")
     embed.add_field(name="Verwendete Programmiersprache", value="Python 3.9")
     embed.add_field(name="Verwendete Bibliotheken", value="discord.py, os, dotenv")
     await ctx.send(embed=embed)
