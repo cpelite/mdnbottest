@@ -152,7 +152,7 @@ class personen(commands.Cog):
     async def heinzlüneburg(self, ctx):
         embed = discord.Embed(title="Fakten über eine MN-Persönlichkeit")
         embed.add_field(name="Name der Person", value="Heinz Lüneburg")
-        embed.add_field(name="Bekannt für", value="Sammelt Sperrungen wie Panini-Sticker.")
+        embed.add_field(name="Bekannt für", value="Sammelt Sperrungen wie Panini-Sticker, Defeater of Helen Bont")
         embed.add_field(name="Heimatnation", value="Ratelon")
         embed.add_field(name="Ämter die die Person bekleidet", value="Unionspräsident")
         embed.add_field(name="frühere nennenswerte Ämter", value="Ministerpräsident von Salbor-Katista")
